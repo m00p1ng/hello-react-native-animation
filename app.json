@@ -1,0 +1,12 @@
+{
+  "name": "rn-animation",
+  "displayName": "rn-animation",
+  "expo": {
+    "name": "rn-animation",
+    "slug": "rn-animation",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

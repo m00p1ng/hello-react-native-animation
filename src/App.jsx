@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { ValueClockScreen } from './pages/ValueClockScreen'
 import { TransitionScreen } from './pages/TransitionScreen'
 import { UseTransitionScreen } from './pages/UseTransitionScreen'
+import { DarkModeScreen } from './pages/DarkModeScreen'
 import { Button } from './components/Button'
 
 const HomeScreen = () => {
@@ -13,6 +14,10 @@ const HomeScreen = () => {
 
   return (
     <View style={{ padding: 16 }}>
+      <Button style={{ marginBottom: 16 }} onPress={() => navigation.navigate('DarkMode')}>
+        Dark Mode
+      </Button>
+
       <Button style={{ marginBottom: 16 }} onPress={() => navigation.navigate('UseTransition')}>
         UseTransition
       </Button>
@@ -37,6 +42,7 @@ const App = () => (
       <Stack.Screen name="ValueClock" component={ValueClockScreen} />
       <Stack.Screen name="Transition" component={TransitionScreen} />
       <Stack.Screen name="UseTransition" component={UseTransitionScreen} />
+      <Stack.Screen name="DarkMode" component={DarkModeScreen} />
     </Stack.Navigator>
   </NavigationContainer>
 );
